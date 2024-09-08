@@ -1,0 +1,21 @@
+.button {
+    color: var(--color-primary-white);
+    font-size: 1rem;
+    margin: .5rem;
+    padding: .5rem 1rem;
+    border: 1px solid var(--color-primary-gray);
+    border-radius: 2px;
+}
+
+.button:disabled {
+    opacity: .6;
+    color: var(--color-primary);
+}
+
+.add {
+    background-color: var(--color-primary-blue);
+}
+
+.delete {
+    background-color: var(--color-primary-red);
+}

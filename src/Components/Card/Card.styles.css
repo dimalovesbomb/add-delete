@@ -1,0 +1,28 @@
+.card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20vw;
+    height: 100px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.cardEnter {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.cardEnterActive {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.cardExit {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.cardExitActive {
+    transform: translateX(calc(100vw + 20%));
+    opacity: 0;
+}

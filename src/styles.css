@@ -1,0 +1,24 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../public/font/open-sans-v40-latin-regular.woff2') format('woff2');
+}
+
+:root {
+    --color-primary: #0b0b1f;
+    --color-primary-gray: #666669;
+    --color-primary-white: #f4f4f5;
+    --color-secondary-white: #f6f7f8;
+    --color-primary-blue: #252659;
+    --color-primary-red: #982f2f;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-secondary-white);
+    font-family: 'Open Sans', serif;
+}
