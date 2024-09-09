@@ -20,8 +20,8 @@ export const cardsSlice = createSlice({
         },
         prepareCardRemoval: (state) => {
             if (state.cards.length) {
-                state.cards[state.cards.length - 1].willBeDeleted = true;
-                state.cards[state.cards.length - 1].position = 'last';
+                const lastCard = state.cards[state.cards.length - 1];
+                state.cards[state.cards.length - 1] = { ...lastCard, willBeDeleted: true, position: 'last' };
             }
         },
         removeCard: (state) => {
